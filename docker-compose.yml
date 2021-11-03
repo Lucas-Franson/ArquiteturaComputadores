@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+    python:
+        image: "python-docker:latest"
+    node:
+        depends_on: 
+            - python
+        image: "node-docker:latest"
